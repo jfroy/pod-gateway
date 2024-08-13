@@ -16,5 +16,4 @@ COPY bin /bin
 CMD [ "/bin/entry.sh" ]
 
 ARG IMAGE_SOURCE
-#https://github.com/k8s-at-home/template-container-image
-LABEL org.opencontainers.image.source $IMAGE_SOURCE
+LABEL org.opencontainers.image.source=$IMAGE_SOURCE
