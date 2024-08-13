@@ -8,6 +8,10 @@ cat /default_config/settings.sh
 cat /config/settings.sh
 . /config/settings.sh
 
+# Print initial addr and route info
+ip addr
+ip route
+
 # in re-entry we need to remove the vxlan
 # on first entry set a routing rule to the k8s DNS server
 if ip addr | grep -q vxlan0; then
